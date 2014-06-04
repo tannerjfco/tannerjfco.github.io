@@ -10,6 +10,8 @@ $legacy-support-for-ie7:     false;
 $legacy-support-for-mozilla: false;
 
 //////////////////////////////
-// Import Base
+// Import Partials
 //////////////////////////////
-@import "partials/base";
+@import "base/base";
+@import "layout/layout";
+@import "components/components";
