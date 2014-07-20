@@ -2,9 +2,11 @@
 @import "breakpoint";
 @import "singularitygs";
 @import "compass";
+@import "toolkit";
 
 // Reset
 @import "normalize";
+@import "toolkit/kickstart";
 
 // Partials
 @import "variables";

@@ -577,102 +577,184 @@ table {
   border-spacing: 0;
 }
 
+/* line 1, ../../../.rvm/gems/ruby-2.0.0-p481/gems/toolkit-2.5.0/stylesheets/toolkit/_kickstart.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p481/gems/toolkit-2.5.0/stylesheets/toolkit/_kickstart.scss */
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
 /*
  * Style Guide - Defines common HTML elements
  */
 /* line 5, ../sass/base/_styleguide.scss */
-* {
-  box-sizing: border-box;
-}
-
-/* line 9, ../sass/base/_styleguide.scss */
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 100%;
   line-height: 1.25em;
 }
 @media (min-width: 56.25em) {
-  /* line 9, ../sass/base/_styleguide.scss */
+  /* line 5, ../sass/base/_styleguide.scss */
   body {
     line-height: 1.375em;
   }
 }
 
-/* line 18, ../sass/base/_styleguide.scss */
+/* line 14, ../sass/base/_styleguide.scss */
+a, a:active, a:visited {
+  color: #1387bf;
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(bottom, #ffffff 75%, #1387bf 75%);
+  background-image: -webkit-linear-gradient(bottom, #ffffff 75%, #1387bf 75%);
+  background-image: linear-gradient(to top, #ffffff 75%, #1387bf 75%);
+  background-size: 0.125em 0.1875em;
+  background-position: 0 1.125em;
+  text-shadow: 0.0625em 0.0625em 0 white, -0.0625em 0 0 white;
+}
+
+/* line 19, ../sass/base/_styleguide.scss */
+a:hover {
+  color: #13bf87;
+  text-decoration: none;
+  background-repeat: repeat-x;
+  background-image: -moz-linear-gradient(bottom, #ffffff 75%, #13bf87 75%);
+  background-image: -webkit-linear-gradient(bottom, #ffffff 75%, #13bf87 75%);
+  background-image: linear-gradient(to top, #ffffff 75%, #13bf87 75%);
+  background-size: 0.125em 0.1875em;
+  background-position: 0 1.125em;
+  text-shadow: 0.0625em 0.0625em 0 white, -0.0625em 0 0 white;
+}
+
+/* line 24, ../sass/base/_styleguide.scss */
 h1 {
   font-size: 2em;
   line-height: 1.25em;
 }
 @media (min-width: 43.75em) {
-  /* line 18, ../sass/base/_styleguide.scss */
+  /* line 24, ../sass/base/_styleguide.scss */
   h1 {
     font-size: 2.5em;
     line-height: 1.125em;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 18, ../sass/base/_styleguide.scss */
+  /* line 24, ../sass/base/_styleguide.scss */
   h1 {
     font-size: 3em;
     line-height: 1.05em;
   }
 }
 
-/* line 31, ../sass/base/_styleguide.scss */
+/* line 37, ../sass/base/_styleguide.scss */
 h2 {
   font-size: 1.625em;
   line-height: 1.15384615em;
 }
 @media (min-width: 43.75em) {
-  /* line 31, ../sass/base/_styleguide.scss */
+  /* line 37, ../sass/base/_styleguide.scss */
   h2 {
     font-size: 2em;
     line-height: 1.25em;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 31, ../sass/base/_styleguide.scss */
+  /* line 37, ../sass/base/_styleguide.scss */
   h2 {
     font-size: 2.25em;
     line-height: 1.25em;
   }
 }
 
-/* line 45, ../sass/base/_styleguide.scss */
+/* line 50, ../sass/base/_styleguide.scss */
 h3 {
   font-size: 1.375em;
   line-height: 1.13636364em;
 }
 @media (min-width: 43.75em) {
-  /* line 45, ../sass/base/_styleguide.scss */
+  /* line 50, ../sass/base/_styleguide.scss */
   h3 {
     font-size: 1.5em;
     line-height: 1.25em;
   }
 }
 @media (min-width: 56.25em) {
-  /* line 45, ../sass/base/_styleguide.scss */
+  /* line 50, ../sass/base/_styleguide.scss */
   h3 {
     font-size: 1.75em;
     line-height: 1.25em;
   }
 }
 
-/* line 58, ../sass/base/_styleguide.scss */
+/* line 63, ../sass/base/_styleguide.scss */
 h4 {
   font-size: 1.125em;
   line-height: 1.11111111em;
 }
 @media (min-width: 43.75em) {
-  /* line 58, ../sass/base/_styleguide.scss */
+  /* line 63, ../sass/base/_styleguide.scss */
   h4 {
     line-height: 1.22222222em;
   }
 }
 
-/* line 66, ../sass/base/_styleguide.scss */
+/* line 71, ../sass/base/_styleguide.scss */
 p {
   margin: 0.5em 0;
+}
+
+/* line 75, ../sass/base/_styleguide.scss */
+blockquote {
+  margin-left: 0.5em;
+  border-left: 5px solid #13bf87;
+  padding-left: 1em;
+}
+
+/* line 81, ../sass/base/_styleguide.scss */
+hr {
+  border: 1px solid #b3b3b3;
+}
+
+/* line 85, ../sass/base/_styleguide.scss */
+ul, ol, dl {
+  padding: 0 0 0 20px;
+}
+
+/* line 89, ../sass/base/_styleguide.scss */
+table {
+  table-layout: fixed;
+}
+
+/* line 93, ../sass/base/_styleguide.scss */
+tr {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 97, ../sass/base/_styleguide.scss */
+fieldset {
+  border: 0;
+  background: #f7f7f7;
+  padding-top: 3em;
+}
+
+/* line 103, ../sass/base/_styleguide.scss */
+legend {
+  font-size: 2em;
+  position: relative;
+  top: 1em;
+}
+
+/* line 109, ../sass/base/_styleguide.scss */
+input:not([type=radio]), textarea {
+  border: 1px solid #b3b3b3;
+  border-radius: 3px;
+  padding: 3px;
 }
 
 /* line 1, ../sass/base/_syntax.scss */
@@ -1049,6 +1131,15 @@ p {
 }
 
 /* Literal.Number.Integer.Long */
+/* line 10, ../sass/layout/_layout.scss */
+header, .content, footer {
+  width: 100%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header {
   color: white;
@@ -1070,8 +1161,35 @@ header:before {
   width: 100%;
   margin: -2px;
 }
+/* line 19, ../sass/components/_header.scss */
+header h1 {
+  margin: 0.5em 0;
+}
 
-/* line 21, ../sass/components/_header.scss */
+/* line 24, ../sass/components/_header.scss */
 .content {
   padding: 0.5em 1em;
+}
+
+/* line 28, ../sass/components/_header.scss */
+footer {
+  color: white;
+  background: #1387bf;
+  margin-top: 1em;
+  padding: 0.5em 1em;
+  position: relative;
+  border-top: 4px solid #1387bf;
+}
+/* line 35, ../sass/components/_header.scss */
+footer:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 2px solid white;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  width: 100%;
+  margin: -2px;
 }

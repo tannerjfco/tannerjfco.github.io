@@ -7,6 +7,6 @@
 
 // Layout
 
-header {
-	//@include grid-span(3,1);
+header, .content, footer {
+	@include grid-span(3,1);
 }

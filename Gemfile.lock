@@ -76,6 +76,8 @@ GEM
       breakpoint (~> 2.4)
       sass (~> 3.3.0)
     syntax (1.2.0)
+    toolkit (2.5.0)
+      sass (~> 3.3.0)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -86,3 +88,4 @@ DEPENDENCIES
   github-pages
   normalize-scss
   singularitygs (~> 1.2.1)
+  toolkit (~> 2.0)
