@@ -1,0 +1,68 @@
+/*
+ * Style Guide - Defines common HTML elements
+ */
+
+ * {
+ 	box-sizing: border-box;
+ }
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 100%;
+	line-height: 1.25em;
+	@include breakpoint($normal) {
+		line-height: 1.375em;
+	}
+}
+
+h1 {
+	font-size: 2em;
+	line-height: 1.25em;
+	@include breakpoint($narrow) {
+		font-size: 2.5em;
+		line-height: 1.125em;
+	}
+	@include breakpoint($normal) {
+		font-size: 3em;
+		line-height: 1.05em;
+	}
+}
+
+h2 {
+	font-size: 1.625em;
+	line-height: 1.15384615em;
+
+	@include breakpoint($narrow) {
+		font-size: 2em;
+		line-height: 1.25em;
+	}
+	@include breakpoint($normal) {
+		font-size: 2.25em;
+		line-height: 1.25em;
+	}
+}
+
+h3 {
+	font-size: 1.375em;
+	line-height: 1.13636364em;
+	@include breakpoint($narrow) {
+		font-size: 1.5em;
+		line-height: 1.25em;
+	}
+	@include breakpoint($normal) {
+		font-size: 1.75em;
+		line-height: 1.25em;
+	}
+}
+
+h4 {
+	font-size: 1.125em;
+	line-height: 1.11111111em;
+	@include breakpoint($narrow) {
+		line-height: 1.22222222em;
+	}
+}
+
+p {
+	margin: 0.5em 0;
+}

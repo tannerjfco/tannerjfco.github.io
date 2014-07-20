@@ -1,9 +1,12 @@
-//////////////////////////////
 // Libraries
-//////////////////////////////
+@import "breakpoint";
 @import "singularitygs";
+@import "compass";
 
-//////////////////////////////
+// Reset
+@import "normalize";
+
 // Partials
-//////////////////////////////
+@import "variables";
+@import "styleguide";
 @import "syntax";

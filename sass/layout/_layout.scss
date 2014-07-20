@@ -1,12 +1,12 @@
-// Breakpoints
-$breakpoint-to-ems: true;
-$narrow: 700px;
-$normal: 900px;
-$wide: 1500px;
-
 // Base Layout Config
 @include add-grid(3);
 @include add-grid(6 at $narrow);
 @include add-grid(2 8 2 at $normal);
 
 @include add-gutter(1/3);
+
+// Layout
+
+header {
+	//@include grid-span(3,1);
+}

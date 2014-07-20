@@ -1,5 +1,6 @@
 require 'singularitygs'
 require 'compass/import-once/activate'
+require 'normalize-scss'
 # Require any additional compass plugins here.
 
 
