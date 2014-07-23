@@ -8,5 +8,11 @@
 // Layout
 
 header, .content, footer {
-	@include grid-span(3,1);
+	@include isolation-span(3,1, both);
+}
+
+.content {
+	@include breakpoint($normal) {
+		@include isolation-span(1,2, both);
+	}
 }

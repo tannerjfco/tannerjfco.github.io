@@ -9,11 +9,10 @@ header {
 		display: block;
 		position: absolute;
 		border-bottom: 2px solid white;
-		top: 2px;
-		left: 2px;
 		right: 2px;
 		bottom: 2px;
 		width: 100%;
+		height: 2px;
 		margin: -2px;
 	}
 	h1 {
@@ -39,9 +38,16 @@ footer {
 		border-top: 2px solid white;
 		top: 2px;
 		left: 2px;
-		right: 2px;
-		bottom: 2px;
 		width: 100%;
+		height: 2px;
 		margin: -2px;
+	}
+	a, a:active, a:visited {
+		color: white;
+		@include underline($header-bg, white);
+	}
+	a:hover {
+		color: darken(white, 6%);
+		@include underline($header-bg, darken(white, 6%));
 	}
 }
