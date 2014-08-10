@@ -1155,6 +1155,14 @@ header, .content, footer {
   }
 }
 
+/* line 1, ../sass/components/_class-components.scss */
+h2.page-title {
+  border-bottom: 1px solid #59abd2;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 0.25rem 1rem;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header {
   color: white;
@@ -1231,8 +1239,61 @@ footer a:hover {
   text-shadow: 0.0625em 0.0625em 0 #1387bf, -0.0625em 0 0 #1387bf;
 }
 
-/* line 3, ../sass/components/_home.scss */
+/* line 2, ../sass/components/_home.scss */
+.home .intro {
+  text-align: center;
+}
+/* line 13, ../../../.rvm/gems/ruby-2.0.0-p481/gems/toolkit-2.5.0/stylesheets/toolkit/_clearfix.scss */
+.home .intro:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 5, ../sass/components/_home.scss */
 .home .intro img {
-  width: 300px;
+  width: 200px;
   height: auto;
+  padding-bottom: 1em;
+  border-bottom: 0.5em solid #eee;
+}
+@media (min-width: 43.75em) {
+  /* line 5, ../sass/components/_home.scss */
+  .home .intro img {
+    float: left;
+    border-bottom: 0;
+    border-right: 0.5em solid #eee;
+    padding-bottom: 0;
+    padding-right: 1em;
+    margin-right: 1em;
+  }
+}
+/* line 19, ../sass/components/_home.scss */
+.home .intro h2 {
+  margin-top: 0.25em;
+}
+@media (min-width: 43.75em) {
+  /* line 19, ../sass/components/_home.scss */
+  .home .intro h2 {
+    float: left;
+  }
+}
+
+/* line 28, ../sass/components/_home.scss */
+ul.posts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+/* line 11, ../../../.rvm/gems/ruby-2.0.0-p481/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/typography/lists/_bullets.scss */
+ul.posts li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 31, ../sass/components/_home.scss */
+ul.posts span:before {
+  content: "|";
+  color: #aaa;
+  padding: 0 0.25rem;
 }
