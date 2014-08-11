@@ -1,46 +1,42 @@
-header {
+%presuf {
 	color: $header-txt;
 	background: $header-bg;
 	padding: 0.5em 1em;
 	position: relative;
+}
+
+%dbl-border {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	margin: -2px;
+}
+
+header {
+	@extend %presuf;
 	border-bottom: 4px solid $header-bg;
 	&:before {
-		content: "";
-		display: block;
-		position: absolute;
+		@extend %dbl-border;
 		border-bottom: 2px solid white;
 		right: 2px;
 		bottom: 2px;
-		width: 100%;
-		height: 2px;
-		margin: -2px;
 	}
 	h1 {
 		margin: 0.5em 0;
 	}
 }
 
-.content {
-	padding: 0.5em 1em;
-}
-
 footer {
-	color: $header-txt;
-	background: $header-bg;
-	margin-top: 1em;
-	padding: 0.5em 1em;
-	position: relative;
+	@extend %presuf;
+	margin-top: 0;
 	border-top: 4px solid $header-bg;
 	&:before {
-		content: "";
-		display: block;
-		position: absolute;
+		@extend %dbl-border;
 		border-top: 2px solid white;
 		top: 2px;
 		left: 2px;
-		width: 100%;
-		height: 2px;
-		margin: -2px;
 	}
 	a, a:active, a:visited {
 		color: white;

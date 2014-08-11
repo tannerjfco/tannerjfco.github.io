@@ -590,6 +590,30 @@ img, video {
   height: auto;
 }
 
+/* line 2, ../sass/base/_mixin.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 5, ../sass/base/_mixin.scss */
+.main {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -2.5rem;
+}
+
+/* line 10, ../sass/base/_mixin.scss */
+.main:after {
+  content: "";
+  display: block;
+}
+
+/* line 14, ../sass/base/_mixin.scss */
+footer, .main:after {
+  /* .push must be the same height as footer */
+  height: 2.5rem;
+}
+
 /*
  * Style Guide - Defines common HTML elements
  */
@@ -1144,6 +1168,10 @@ header, .content, footer {
   clear: both;
 }
 
+/* line 14, ../sass/layout/_layout.scss */
+.content {
+  padding: 0.5em 1em;
+}
 @media (min-width: 56.25em) {
   /* line 14, ../sass/layout/_layout.scss */
   .content {
@@ -1164,57 +1192,50 @@ h2.page-title {
 }
 
 /* line 1, ../sass/components/_header.scss */
-header {
+header, footer {
   color: white;
   background: #1387bf;
   padding: 0.5em 1em;
   position: relative;
-  border-bottom: 4px solid #1387bf;
 }
-/* line 7, ../sass/components/_header.scss */
-header:before {
+
+/* line 8, ../sass/components/_header.scss */
+header:before, footer:before {
   content: "";
   display: block;
   position: absolute;
-  border-bottom: 2px solid white;
-  right: 2px;
-  bottom: 2px;
   width: 100%;
   height: 2px;
   margin: -2px;
 }
-/* line 18, ../sass/components/_header.scss */
+
+/* line 17, ../sass/components/_header.scss */
+header {
+  border-bottom: 4px solid #1387bf;
+}
+/* line 20, ../sass/components/_header.scss */
+header:before {
+  border-bottom: 2px solid white;
+  right: 2px;
+  bottom: 2px;
+}
+/* line 26, ../sass/components/_header.scss */
 header h1 {
   margin: 0.5em 0;
 }
 
-/* line 23, ../sass/components/_header.scss */
-.content {
-  padding: 0.5em 1em;
-}
-
-/* line 27, ../sass/components/_header.scss */
+/* line 31, ../sass/components/_header.scss */
 footer {
-  color: white;
-  background: #1387bf;
-  margin-top: 1em;
-  padding: 0.5em 1em;
-  position: relative;
+  margin-top: 0;
   border-top: 4px solid #1387bf;
 }
-/* line 34, ../sass/components/_header.scss */
+/* line 35, ../sass/components/_header.scss */
 footer:before {
-  content: "";
-  display: block;
-  position: absolute;
   border-top: 2px solid white;
   top: 2px;
   left: 2px;
-  width: 100%;
-  height: 2px;
-  margin: -2px;
 }
-/* line 45, ../sass/components/_header.scss */
+/* line 41, ../sass/components/_header.scss */
 footer a, footer a:active, footer a:visited {
   color: white;
   text-decoration: none;
@@ -1226,7 +1247,7 @@ footer a, footer a:active, footer a:visited {
   background-position: 0 1.125em;
   text-shadow: 0.0625em 0.0625em 0 #1387bf, -0.0625em 0 0 #1387bf;
 }
-/* line 49, ../sass/components/_header.scss */
+/* line 45, ../sass/components/_header.scss */
 footer a:hover {
   color: #f0f0f0;
   text-decoration: none;
@@ -1249,7 +1270,21 @@ footer a:hover {
   display: table;
   clear: both;
 }
-/* line 5, ../sass/components/_home.scss */
+@media (min-width: 43.75em) {
+  /* line 2, ../sass/components/_home.scss */
+  .home .intro {
+    margin: auto;
+    width: 60%;
+    padding: 1em 0;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 2, ../sass/components/_home.scss */
+  .home .intro {
+    width: auto;
+  }
+}
+/* line 13, ../sass/components/_home.scss */
 .home .intro img {
   width: 200px;
   height: auto;
@@ -1257,7 +1292,7 @@ footer a:hover {
   border-bottom: 0.5em solid #eee;
 }
 @media (min-width: 43.75em) {
-  /* line 5, ../sass/components/_home.scss */
+  /* line 13, ../sass/components/_home.scss */
   .home .intro img {
     float: left;
     border-bottom: 0;
@@ -1267,18 +1302,26 @@ footer a:hover {
     margin-right: 1em;
   }
 }
-/* line 19, ../sass/components/_home.scss */
+@media (min-width: 56.25em) {
+  /* line 13, ../sass/components/_home.scss */
+  .home .intro img {
+    padding-right: 1.5em;
+    margin-right: 1.5em;
+  }
+}
+/* line 31, ../sass/components/_home.scss */
 .home .intro h2 {
   margin-top: 0.25em;
 }
 @media (min-width: 43.75em) {
-  /* line 19, ../sass/components/_home.scss */
+  /* line 31, ../sass/components/_home.scss */
   .home .intro h2 {
-    float: left;
+    text-align: justify;
+    margin-top: 1.125em;
   }
 }
 
-/* line 28, ../sass/components/_home.scss */
+/* line 41, ../sass/components/_home.scss */
 ul.posts {
   list-style: none;
   margin: 0;
@@ -1291,7 +1334,7 @@ ul.posts li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 31, ../sass/components/_home.scss */
+/* line 44, ../sass/components/_home.scss */
 ul.posts span:before {
   content: "|";
   color: #aaa;

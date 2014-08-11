@@ -1,3 +1,4 @@
 name: tannerjf.co
 markdown: redcarpet
 pygments: true
+permalink: /posts/:title

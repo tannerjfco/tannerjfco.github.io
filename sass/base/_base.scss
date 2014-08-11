@@ -10,5 +10,10 @@
 
 // Partials
 @import "variables";
+@import "mixin";
+
+// Sticky Footer
+@include sticky_footer(2.5rem);
+
 @import "styleguide";
 @import "syntax";

@@ -2,6 +2,14 @@
 	.intro {
 		@include clearfix;
 		text-align: center;
+		@include breakpoint($narrow) {
+			margin: auto;
+			width: 60%;
+			padding: 1em 0;
+		}
+		@include breakpoint($normal) {
+			width: auto;
+		}
 		img {
 			width: 200px;
 			height: auto;
@@ -15,11 +23,16 @@
 				padding-right: 1em;
 				margin-right: 1em;
 			}
+			@include breakpoint($normal) {
+				padding-right: 1.5em;
+				margin-right: 1.5em;
+			}
 		}
 		h2 {
 			margin-top: 0.25em;
 			@include breakpoint($narrow) {
-				float: left;
+				text-align: justify;
+				margin-top: 1.125em;
 			}
 		}
 	}
