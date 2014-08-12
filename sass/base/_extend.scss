@@ -1,0 +1,19 @@
+%presuf {
+	color: $header-txt;
+	background: $header-bg;
+	padding: 0.5em 1em;
+	position: relative;
+}
+
+%dbl-border {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	margin: -2px;
+}
+
+%presuf-link {
+	@include underline($header-bg, $header-bg);
+}

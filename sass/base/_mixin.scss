@@ -16,3 +16,14 @@
     height: $height;
   }
 }
+
+@mixin presuf-link {
+  a, a:active, a:visited {
+    color: white;
+    @extend %presuf-link;
+  }
+  a:hover {
+    color: darken(white, 6%);
+    @extend %presuf-link;
+  }
+}

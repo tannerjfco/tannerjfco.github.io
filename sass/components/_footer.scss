@@ -1,0 +1,20 @@
+footer {
+	@extend %presuf;
+	margin-top: 0;
+	border-top: 4px solid $header-bg;
+	&:before {
+		@extend %dbl-border;
+		border-top: 2px solid white;
+		top: 2px;
+		left: 2px;
+	}
+	a {
+		padding: 0 0.5em;
+	}
+	@include presuf-link;
+}
+
+.contact {
+	display: inline-block;
+	float: right;
+}

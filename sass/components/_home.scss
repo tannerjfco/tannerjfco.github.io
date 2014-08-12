@@ -36,14 +36,24 @@
 			}
 		}
 	}
+	h2.page-title {
+		margin-bottom: 0;
+	}
 }
 
 ul.posts {
 	@include no-bullets;
 	@include reset-box-model;
+	font-size: 1.25em;
 	span:before {
 		content: "|";
 		color: #aaa;
 		padding: 0 0.25rem;
+	}
+	li {
+		border-bottom: 1px solid #ddd;
+		padding: 1em;
+		margin-left: -1em;
+		margin-right: -1em;
 	}
 }
