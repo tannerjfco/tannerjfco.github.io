@@ -1221,6 +1221,11 @@ h2.page-title {
   padding: 0.25rem 1rem;
 }
 
+/* line 8, ../sass/components/_class-components.scss */
+#disqus_thread {
+  margin-top: 1em;
+}
+
 /* line 1, ../sass/components/_header.scss */
 header {
   border-bottom: 4px solid #1387bf;
