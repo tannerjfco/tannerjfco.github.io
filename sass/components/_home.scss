@@ -36,6 +36,15 @@
 			}
 		}
 	}
+	.about {
+		@include breakpoint($narrow) {
+			margin: auto;
+			width: 60%;
+		}
+		@include breakpoint($normal) {
+			width: auto;
+		}
+	}
 	h2.page-title {
 		margin-bottom: 0;
 	}

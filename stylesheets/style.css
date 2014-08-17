@@ -1363,12 +1363,25 @@ footer a:hover {
     margin-top: 1.125em;
   }
 }
-/* line 39, ../sass/components/_home.scss */
+@media (min-width: 43.75em) {
+  /* line 39, ../sass/components/_home.scss */
+  .home .about {
+    margin: auto;
+    width: 60%;
+  }
+}
+@media (min-width: 56.25em) {
+  /* line 39, ../sass/components/_home.scss */
+  .home .about {
+    width: auto;
+  }
+}
+/* line 48, ../sass/components/_home.scss */
 .home h2.page-title {
   margin-bottom: 0;
 }
 
-/* line 44, ../sass/components/_home.scss */
+/* line 53, ../sass/components/_home.scss */
 ul.posts {
   list-style: none;
   margin: 0;
@@ -1382,13 +1395,13 @@ ul.posts li {
   list-style-type: none;
   margin-left: 0;
 }
-/* line 48, ../sass/components/_home.scss */
+/* line 57, ../sass/components/_home.scss */
 ul.posts span:before {
   content: "|";
   color: #aaa;
   padding: 0 0.25rem;
 }
-/* line 53, ../sass/components/_home.scss */
+/* line 62, ../sass/components/_home.scss */
 ul.posts li {
   border-bottom: 1px solid #ddd;
   padding: 1em;
