@@ -1,4 +1,6 @@
 name: tannerjf.co
+description: Tanner J Ferguson
+url: tannerjf.co
 markdown: redcarpet
 pygments: true
 permalink: /posts/:title
