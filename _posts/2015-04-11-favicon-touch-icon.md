@@ -1,5 +1,8 @@
 ---
-published: false
+layout: post
+title:  "Favicon / Touch Icons: More than you bargained for"
+date:   2015-04-11 20:12:0
+categories: frontend
 ---
 
 ## Favicon / Touch Icons: More than you bargained for
