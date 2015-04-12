@@ -1,11 +1,18 @@
 module.exports = function(grunt) {
 
-  require('load-grunt-tasks')(grunt); // npm install --save-dev load-grunt-tasks
+  require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
+      watch: {
+          css: {
+            files: '**/*.scss',
+            tasks: ['sass']
+          },
+      },
       sass: {
           options: {
-              sourceMap: true
+              outputStyle: 'compressed',
+              includePaths: [ 'bower_components' ]
           },
           dist: {
               files: {
@@ -14,6 +21,8 @@ module.exports = function(grunt) {
           }
       }
   });
+
+  grunt.loadNpmTasks('grunt-contrib-watch');
 
   grunt.registerTask('default', ['sass']);
 

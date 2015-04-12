@@ -1,0 +1,21 @@
+{
+  "name": "tannerjf.co",
+  "version": "1.0.0",
+  "authors": [
+    "tannerjfco <tannerjfco@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "breakpoint-sass": "~2.5.0",
+    "compass-mixins": "~1.0.2",
+    "singularity": "~1.6.2",
+    "sass-toolkit": "~2.9.0",
+    "normalize.css": "~3.0.3"
+  }
+}

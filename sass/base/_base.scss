@@ -1,12 +1,12 @@
 // Libraries
-@import "breakpoint";
-@import "singularitygs";
-@import "compass";
-@import "toolkit";
+@import "breakpoint-sass/stylesheets/breakpoint";
+@import "singularity/stylesheets/singularitygs";
+@import "compass-mixins/lib/compass";
+@import "sass-toolkit/stylesheets/toolkit";
 
 // Reset
-@import "normalize";
-@import "toolkit/kickstart";
+@import "../../bower_components/normalize.css/normalize.css";
+@import "sass-toolkit/stylesheets/toolkit/kickstart";
 
 // Partials
 @import "variables";
