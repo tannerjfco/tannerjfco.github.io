@@ -5,3 +5,4 @@ enforce_ssl: tannerjf.co
 markdown: redcarpet
 highlighter: pygments
 permalink: /posts/:title
+exclude: ['node_modules', 'sass', 'Gemfile', 'Gemfile.lock', 'gulpfile.js', 'package.json', 'bower.json', 'CNAME']

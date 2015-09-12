@@ -1,10 +1,23 @@
 {
-  "name": "tannerjf.co",
-  "version": "1.0.0",
+  "name": "front",
+  "version": "0.0.2",
+  "description": "front toolset",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tannerjfco/tannerjfco.github.io"
+  },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-watch": "^0.6.1",
-    "grunt-sass": "^0.18.1",
-    "load-grunt-tasks": "^3.1.0"
+    "autoprefixer-core": "^5.2.1",
+    "browser-sync": "^2.9.3",
+    "cssnano": "^2.3.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-cssnano": "^1.1.0",
+    "gulp-if": "^1.2.5",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2"
+  },
+  "scripts": {
+    "postinstall": "bower install"
   }
 }

@@ -5,6 +5,6 @@ layout: default
 <p class="meta">{{ page.date | date: "%B %-d, %Y" }}</p>
 
 <div class="post">
-{{ content }}
+{{ content | remove: page.title }}
 {% include disqus.html %}
 </div>
