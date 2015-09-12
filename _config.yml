@@ -1,6 +1,7 @@
 name: tannerjf.co
 description: Tanner J Ferguson
-url: tannerjf.co
+url: https://tannerjf.co
+enforce_ssl: tannerjf.co
 markdown: redcarpet
 highlighter: pygments
 permalink: /posts/:title
