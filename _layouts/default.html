@@ -11,6 +11,8 @@
       {% include loadCSS.html %}
       loadCSS("//fonts.googleapis.com/css?family=Source+Sans+Pro");
       loadCSS("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+      if (("tannerjf.co" == window.location.host) && (window.location.protocol != "https:"))
+        window.location.protocol = "https";
     </script>
     <noscript>
       <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
